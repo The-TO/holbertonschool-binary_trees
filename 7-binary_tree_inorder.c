@@ -5,7 +5,7 @@
  * @tree: Points to the root of the tree
  * @func: Pointer to the function to call each node
  */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 	{
