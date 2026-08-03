@@ -13,8 +13,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	nvx_node = malloc(sizeof(binary_tree_t));
 
-	if (!nvx_node)
-	{
+	if (!nvx_node){
 		return (NULL);
 	}
 	nvx_node->parent = parent;
