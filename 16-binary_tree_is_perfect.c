@@ -6,15 +6,14 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	size_t hauteur, taille;
+    size_t hauteur, taille;
 
-	if (!tree)
-	{
-		return (0);
-	}
-	hauteur = binary_tree_height(tree);
-	taille = binary_tree_size(tree);
+    if (!tree)
+    {
+        return(0);
+    }
+    hauteur = binary_tree_height(tree);
+    taille = binary_tree_size(tree);
 
-	return (taille == (1 << (hauteur + 1)) - 1);
+    return (taille == (1 << (hauteur+1))-1);
 }
-
